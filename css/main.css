@@ -87,3 +87,50 @@ body, html {
         -ms-transform:rotateY(180deg);
     }
 }
+
+@media (max-width: 375px){
+    .layout {
+        font-family: 'Press Start 2P', cursive;
+        font-size: 0.5rem;
+        padding: 10px;
+    }
+    #left{
+        margin-top:50px;
+        width: 30%;
+        color: white;
+    }
+    #mid{
+        width: 40%;
+        padding:0 !important;
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+        font-size: 0.935rem;
+    }
+    #ss{
+        margin-top: 35px;
+        margin-bottom: 20px;
+        width: 135px;
+        height: 200px;
+    }
+    #rag{
+        position: relative;
+        top: 20px;
+        width: calc(100%-25px);
+        height: 50px;
+    }
+    #right{
+        margin-top: 50px;
+        width: 30%;
+        color: white;
+        -webkit-transform:rotateY(180deg);
+        -moz-transform:rotateY(180deg);
+        -o-transform:rotateY(180deg);
+        -ms-transform:rotateY(180deg);
+    }
+    .tengah{
+        margin-top:-100px;
+    }
+    .bawah{
+        margin-top:-100px;
+    }
+}
