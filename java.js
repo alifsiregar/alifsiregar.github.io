@@ -1,10 +1,14 @@
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+
 const teks = ["God's in His heaven", "All's right with the world"];
 let i = 0;
 let j = 0;
 let currentText = "";
 let letter = "";
 
-function type(){
+async function type(){
     if(i === teks.length){
         i = 0;
     }
@@ -13,6 +17,7 @@ function type(){
 
     document.querySelector(".texts").textContent = letter;
     if(letter.length === currentText.length ){
+        await sleep(500);
         i++;
         j=0;
     }
