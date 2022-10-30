@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    color: #ffffff;
+    font-family: 'Press Start 2P', cursive;
+}
+
+h1{
+    margin: 0;
+}
+
+.container {
+    margin: 10px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.container .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .personal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.container .experience {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 32px;
+}
+
+.container .profile .title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 56px;
+    text-align: center;
+}
+
+.container .profile .my-photo {
+    max-width: 100%;
+    height: auto;
+    margin: 24px 0;
+}
+
+.container .profile .subtitle {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.small-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 16px;
+}
+
+.small-container ul li:not(:last-child) {
+    margin: 0 0 20px 0;
+}
+
+.red-title {
+    color: red;
+    font-size: 18px;
+}
+
+#contact-desktop {
+    width: 100%;
+}
+
+#contact-desktop .content {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+}
+
+#contact-desktop a {
+    color: #ffffff;
+}
+
+@media only screen and (min-width: 500px) {
+    .container {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        max-width: 1440px;
+    }
+
+    .container {
+        flex-direction: row;
+        max-width: max-content;
+        margin: 32px auto;
+    }
+
+    .container .personal {
+        order: 1;
+        max-width: 300px;
+        justify-content: center;
+    }
+
+    .container .profile {
+        order: 2;
+        max-width: 300px;
+        justify-content: center;
+    }
+
+    .container .experience {
+        order: 3;
+        max-width: 300px;
+        justify-content: center;
+    }
+
+    .container .profile .title {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    .container .profile .my-photo {
+        margin: 10px 0;
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+    
+    .container .profile .subtitle {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 24px;
+        line-height: 1.5;
+    }
+
+    .small-container {
+        font-size: 12px;
+    }
+    
+    .red-title {
+        color: red;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 1330px) {
+
+    .container .profile .title {
+        font-size: 56px;
+    }
+    
+    .container .profile .subtitle {
+        font-size: 32px;
+    }
+    
+    .container .personal {
+        max-width: 450px;
+    }
+
+    .container .profile {
+        max-width: 450px;
+    }
+
+    .container .experience {
+        max-width: 450px;
+    }
+
+    .small-container {
+        font-size: 16px;
+    }
+    
+    .red-title {
+        color: red;
+        font-size: 18px;
+    }
+}
